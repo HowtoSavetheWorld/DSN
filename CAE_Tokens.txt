@@ -1,6 +1,6 @@
 In the world of computer science and data processing, it is often necessary to manipulate and process complex information in order to derive insights and make decisions. One approach to this task is to use tokens, which are units of data that represent different aspects of a system or process. In this context, the concept of causal relationships plays an important role, as understanding how different variables are related to each other is often critical for making informed decisions.
 
-In this article, we will explore the implementation of dynamic interfunctionality between CauseTokens, AffectTokens, and EffectTokens in a Cause-Affect-Effect (CAE) sequence. We will define several custom data types and functions that are used to process and manipulate tokens representing different aspects of a causal relationship. These tokens include CauseTokens, which represent causal data; AffectTokens, which represent affective data; and EffectTokens, which represent effective data. Each token has specific fields, methods, and roles that are tailored to its purpose.
+In this excerpt, we will explore the implementation of dynamic interfunctionality between CauseTokens, AffectTokens, and EffectTokens in a Cause-Affect-Effect (CAE) sequence. We will define several custom data types and functions that are used to process and manipulate tokens representing different aspects of a causal relationship. These tokens include CauseTokens, which represent causal data; AffectTokens, which represent affective data; and EffectTokens, which represent effective data. Each token has specific fields, methods, and roles that are tailored to its purpose.
 
 We will also introduce three functions: ProcessCause(), ProcessAffect(), and ProcessEffect(). These functions take in one or more tokens, process them in some way, and return a token of a different type. For example, ProcessCause() takes a CauseToken as input, processes it, and returns an AffectToken. ProcessAffect() takes an AffectToken and a CauseToken as input, processes them, and returns an EffectToken. ProcessEffect() takes a CauseToken and an EffectToken as input, processes them, and returns an AffectToken.
 
@@ -61,3 +61,26 @@ Conversely, the ProcessAffect function takes an AffectToken and a CauseToken as 
 Finally, the ProcessEffect function takes a CauseToken and an EffectToken as input, processes them, analyzes them, and returns an AffectToken. This function can be used to determine the emotional or psychological impact of a given outcome or result, based on the initial cause that triggered it.
 
 In order to achieve dynamic interfunctionality between these different tokens and functions, it is necessary to define clear rules and methods for how they can be combined and manipulated. This might involve using data structures such as trees, graphs, or networks to represent the different causal relationships, as well as developing algorithms and heuristics to analyze and process the data.
+
+
+CauseToken, AffectToken, EffectToken
+
+The implementation of an Event struct that contains a Unix timestamp and an arbitrary byte array representing the event data. Furthermore including the definition of an EventStream struct that contains a unique identifier for the stream, the last sequence number seen for the stream, and a list of events in the stream.
+
+The DSN struct contains a map of event streams indexed by ID, as well as a mutex for thread-safe access to the streams. It provides two methods: AddEvent, which adds a new event to the specified stream and returns the sequence number assigned to the event, and GetEvents, which returns a range of events from the specified stream based on their sequence numbers.
+
+The AddEvent method first acquires the lock to ensure thread-safe access to the stream. It then retrieves the stream associated with the given ID from the Streams map, or creates a new one if it doesn’t exist.
+
+The Distributed Sequencing Network (DSN) can be used to process events. In particular, the DSN defines several structs and functions that can be used to process Cause, Affect, and Effect Tokens, which can be combined into CAE sequences to process events.
+
+The CauseToken, AffectToken, and EffectToken structs each contain fields and methods that are specific to the type of token they represent. These tokens are the basic building blocks of the DSN, and they represent different aspects of an event. The CauseToken represents the cause or reason for an event, the AffectToken represents the emotional or behavioral response to the event, and the EffectToken represents the outcome or consequence of the event.
+
+The CAESequence struct contains fields and methods that are specific to a CAE sequence. This sequence takes in a CauseToken, processes it to produce an AffectToken, processes the AffectToken and original CauseToken to produce an EffectToken, and then processes the EffectToken and original CauseToken to produce a new AffectToken. This sequence represents the processing of an event, where the cause of the event leads to a certain affective response, which in turn leads to a certain outcome, which in turn leads to a new affective response.
+
+The ProcessCause function takes in a CauseToken, processes it, and returns an AffectToken. This function represents the processing of the cause of an event, which leads to a certain affective response.
+
+The ProcessAffect function takes in an AffectToken and a CauseToken, processes them, and returns an EffectToken. This function represents the processing of the affective response to an event, which in turn leads to a certain outcome.
+
+The ProcessEffect function takes in a CauseToken and an EffectToken, processes them, and returns an AffectToken. This function represents the processing of the outcome of an event, which leads to a new affective response.
+
+Finally, the NewCAESequence function takes in a CauseToken, processes it to produce an AffectToken, processes the AffectToken and original CauseToken to produce an EffectToken, and then processes the EffectToken and original CauseToken to produce a new AffectToken. This function represents the processing of an event using a CAE sequence.
