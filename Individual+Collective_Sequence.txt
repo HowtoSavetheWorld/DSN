@@ -1,0 +1,101 @@
+Individual Sequencing; Collective Sequencing
+
+In the world of Distributed Sequencing Networks (DSNs), individual and collective sequences play a vital role in tracking the progress of tasks, actions, and events. While individual sequences refer to the sequence of a node that is not influenced by any other node, collective sequences represent the sequence of a node that is influenced by the sequences of other nodes it is connected to. To implement these methods, we use the GetIndividualSequence() and GetCollectiveSequence() methods, which can be applied to all node types, be it natural, human, virtual, artificial, symbiotic and even simulative.
+
+To implement these methods, we first define the concept of individual and collective sequences.
+
+For simplicity, we will define…
+
+“Individual Sequence” as the sequence of a node that is not influenced by any other node.
+
+“Collective Sequence” as the sequence of a node that is influenced by the sequences of other nodes it is connected to.
+
+Method of Sequence Return on Individual +/or Collective State(s)
+
+— > GetIndividualSequence()
+
+— > GetCollectiveSequence()
+
+Applicable to ALL Node Type(s)
+
+-natural
+
+-human
+
+-artifical
+
+-sym
+
+-etc
+
+Implementation of GetCollectiveSequence() Method via Self-Recursive Sequence Traversing
+
+-define a helper function
+
+-getSequence()
+
+-recursively traverse the network
+
+-return a collective sequence of a node
+
+Implementation of a “helper function” called getSequence(). The function is designed to recursively traverse a peer-to-peer (p2p) network and return the collective sequence of a node. In order to accomplish this task, the function takes two arguments: a Node and a visited map. The Node argument represents the starting node from which the traversal begins, while the visited map is used to keep track of visited nodes during the traversal.
+
+To begin with, the visited map is initialized with the name of the starting node by setting its value to true. This is done to ensure that the starting node is not visited more than once during the traversal.
+
+Next, the function initializes an empty sequence slice of strings that will be used to accumulate the collective sequence of the network. A for loop is then used to iterate over the connections of the current node. For each connection, the function checks if it has already been visited or not by checking the value of the corresponding entry in the visited map. If the connection has not been visited, the getSequence() function is called recursively on that connection, and the resulting sequence is appended to the current sequence slice.
+
+Finally, the function appends the sequence of the current node to the sequence slice and returns it. This ensures that the sequence of the current node is added to the collective sequence of the network.
+
+The implementation of the GetCollectiveSequence() method for each node type. Here’s an example implementation for HumanNode: Similarly, we can implement the GetCollectiveSequence() method for other node types, such as VirtualNode. The GetCollectiveSequence() method is a function that returns the collective sequence of a node. The collective sequence is a list of all the sequences that the node has, including its own sequence and the sequences of all the nodes it is connected to in the peer-to-peer network. In the given code snippet, the method is implemented for the HumanNode type. The function takes in a pointer to the HumanNode type as an argument and returns a slice of strings, which represents the collective sequence of the HumanNode. The function starts by creating an empty map called “visited” to keep track of the nodes that have already been visited. It then calls the getSequence() function, passing in the HumanNode and the visited map as arguments. The getSequence() function is a recursive function that traverses the peer-to-peer network and returns the collective sequence of all the nodes. The getSequence() function first checks if the node has already been visited by looking it up in the visited map. If the node has already been visited, the function returns an empty slice of strings. Otherwise, it adds the current node to the visited map and initializes an empty slice of strings called “sequence”. The function then loops through each sequence type that the node has and adds it to the “sequence” slice. It then loops through all the nodes that the current node is connected to and recursively calls the getSequence() function for each node. The function concatenates the sequence of each connected node to the “sequence” slice. Finally, the function returns the “sequence” slice, which contains the collective sequence of the current node and all its connected nodes. Similarly, the GetCollectiveSequence() method can be implemented for other node types, such as VirtualNode. This function would also call the getSequence() function recursively to collect the sequences of all connected nodes, but the specific implementation details would depend on the properties and characteristics of the VirtualNode type.
+
+With these methods in place, we can now get the individual and collective sequences of any node in the network. For example:
+
+Collective Sequencing Example
+
+In this example, we have two human nodes connected to each other. human1 performs action1 and human2 performs action2. The individual sequence of human1 is [action1] and the collective sequence is [action2 action1], because human1 is connected to human2 and human2 performs action2. Similarly, the individual and collective sequences of human2 are [action2] and [action1 action2], respectively.
+
+The definition of two instances of the HumanNode struct, named human1 and human2. human1 is initialized with the name “__, and human2 is initialized with the name “__”.
+
+Following this, the AddConnection method of human1 is called with human2 as an argument, which establishes a connection between the two nodes in a peer-to-peer network. This connection allows nodes to communicate with each other and exchange information.
+
+Next, the AddToSequence method is called for human1 with the string “action1” as the argument, and for human2 with the string “action2” as the argument. This method adds the given string to the sequence associated with the respective node.
+
+The next set of lines prints the individual and collective sequences associated with each node. The GetIndividualSequence method returns the sequence associated with the node it is called upon. Therefore, calling this method on human1 returns the sequence [action1], and calling it on human2 returns the sequence [action2].
+
+The GetCollectiveSequence method returns the collective sequence for the entire network, which is the combination of the sequences of all connected nodes, in the order in which they were added. Therefore, calling this method on human1 returns the sequence [action2 action1], which is a concatenation of the sequences of human2 and human1, in that order. Similarly, calling it on human2 returns the sequence [action1 action2], which is a concatenation of the sequences of human1 and human2, in that order.
+
+Individual Sequence(); Collective Sequence()
+
+Individual +/or Collective Sequence()
+
+individual and collective sequences of any node in the network
+
+Bi-Sequencing Example
+
+In this example, we have two human nodes connected to each other. human1 performs action1 and human2 performs action2. The individual sequence of human1 is [action1] and the collective sequence is [action2 action1], because human1 is connected to human2 and human2 performs action2. Similarly, the individual and collective sequences of human2 are [action2] and [action1 action2], respectively.
+
+We define two instances of the HumanNode struct, named human1 and human2. human1 is initialized with the name “Alice”, and human2 is initialized with the name “Bob”.
+
+Following this, the AddConnection method of human1 is called with human2 as an argument, which establishes a connection between the two nodes in a peer-to-peer network. This connection allows nodes to communicate with each other and exchange information.
+
+Next, the AddToSequence method is called for human1 with the string “action1” as the argument, and for human2 with the string “action2” as the argument. This method adds the given string to the sequence associated with the respective node.
+
+The next set of lines prints the individual and collective sequences associated with each node. The GetIndividualSequence method returns the sequence associated with the node it is called upon. Therefore, calling this method on human1 returns the sequence [action1], and calling it on human2 returns the sequence [action2].
+
+The GetCollectiveSequence method returns the collective sequence for the entire network, which is the combination of the sequences of all connected nodes, in the order in which they were added. Therefore, calling this method on human1 returns the sequence [action2 action1], which is a concatenation of the sequences of human2 and human1, in that order. Similarly, calling it on human2 returns the sequence [action1 action2], which is a concatenation of the sequences of human1 and human2, in that order.
+
+With these methods in place, we can now get the individual and collective sequences of any node in the network. For example:
+
+Collective Sequencing Example
+
+In this example, we have two human nodes connected to each other. human1 performs action1 and human2 performs action2. The individual sequence of human1 is [action1] and the collective sequence is [action2 action1], because human1 is connected to human2 and human2 performs action2. Similarly, the individual and collective sequences of human2 are [action2] and [action1 action2], respectively.
+
+The definition of two instances of the HumanNode struct, named human1 and human2. human1 is initialized with the name “Alice”, and human2 is initialized with the name “Bob”.
+
+Following this, the AddConnection method of human1 is called with human2 as an argument, which establishes a connection between the two nodes in a peer-to-peer network. This connection allows nodes to communicate with each other and exchange information.
+
+Next, the AddToSequence method is called for human1 with the string “action1” as the argument, and for human2 with the string “action2” as the argument. This method adds the given string to the sequence associated with the respective node.
+
+The next set of lines prints the individual and collective sequences associated with each node. The GetIndividualSequence method returns the sequence associated with the node it is called upon. Therefore, calling this method on human1 returns the sequence [action1], and calling it on human2 returns the sequence [action2].
+
+The GetCollectiveSequence method returns the collective sequence for the entire network, which is the combination of the sequences of all connected nodes, in the order in which they were added. Therefore, calling this method on human1 returns the sequence [action2 action1], which is a concatenation of the sequences of human2 and human1, in that order. Similarly, calling it on human2 returns the sequence [action1 action2], which is a concatenation of the sequences of human1 and human2, in that order.
