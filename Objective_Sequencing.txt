@@ -1,0 +1,71 @@
+According to Smiley, the battle between objectivity and subjectivity can ultimately dictate reality. This means that the way people perceive and validate truth can have a significant impact on reality, even if it is not based on objective fact. Smiley provides the example of when enough people accept falsehood as truth, it can distort the perception and perspective of reality, whereby what was originally a falsity (or lie) now becomes a “commonly accepted truth” of reality.
+
+Smiley asserts that
+
+-Determinism +/or Self-Determinism
+
+-Free Will
+
+-Compatibilism
+
+are all contingent upon
+
+the presence and essence of “perfect and complete” information
+
+Without Perfect + Complete Information…
+
+an individual does not have open, full, fair, free, and fluid access to their “Free Will”
+
+an individual does not have open, full, fair, free, and fluid access to individual and collective “Determinism” +/or “Self-Determinism”
+
+an individual does not have open, full, fair, free, and fluid access to individual and collective “Compatibilism”
+
+Perception + Delusion of Reality
+
+In the context of Distributed Sequencing Network(s), Smiley’s concept of the variable laws that dictate reality can be applied to the validation and perception of sequences of actions, events, and tasks. The accuracy and reliability of the data used to create these sequences can significantly impact the outcomes and effectiveness of the network. If incorrect or biased data is used, it can distort the perception of reality and lead to suboptimal results.
+
+Furthermore, the acceptance of certain beliefs or assumptions can also impact the way the network operates. For example, if there is a commonly accepted belief that certain actions or events always lead to specific outcomes, this may be reflected in the way the network is designed and the sequences that are created.
+
+It is important, therefore, for those involved in designing and operating distributed sequencing networks to ensure that the data used is accurate and unbiased and that any assumptions or beliefs are rigorously tested and validated. This will help to ensure that the network operates effectively and produces optimal outcomes.
+
+Objectivity v. Subjectivity
+
+The concept of objectivity versus subjectivity is fundamental in understanding the relationship between perception, truth, reality, and distributed sequencing networks. Objectivity refers to a perspective or analysis that is based on facts and evidence, independent of personal beliefs or biases. Subjectivity, on the other hand, is based on personal opinions, beliefs, or biases, which may not necessarily be grounded in fact or evidence.
+
+Objectivity
+
+In the context of distributed sequencing networks, objectivity plays a crucial role in ensuring that the system is based on accurate and reliable data. The system relies on the input of data from multiple sources, which is then analyzed to make predictions or decisions. If the data is not objective and accurate, the predictions and decisions made by the system may be flawed and unreliable.
+
+Subjectivity
+
+On the other hand, subjectivity can also play a role in the development of distributed sequencing networks. For example, the perception of what constitutes a fair and just allocation of work or resources may be subjective and vary between different stakeholders. Therefore, it is important to consider the subjective perceptions and opinions of all stakeholders in the design and implementation of the system.
+
+The example provided by Smiley highlights the importance of recognizing the impact of subjective perceptions and beliefs on reality. In the context of distributed sequencing networks, this means that the design and implementation of the system should take into account the potential for subjective biases and perceptions to affect the accuracy and reliability of the data and analysis.
+
+Smiley’s belief in the need for perfect and complete information speaks to a larger truth about the human experience. As individuals and societies, we are constantly striving for greater knowledge and understanding of the world around us. However, the pursuit of perfect and complete information is an elusive goal, as our access to information is limited by our own cognitive and technological limitations. Yet, despite these limitations, the need for perfect and complete information remains paramount, as it allows us to make informed decisions that have far-reaching consequences for ourselves and our communities. In a world where misinformation and disinformation run rampant, the importance of perfect and complete information cannot be overstated. As Smiley suggests, the pursuit of perfect and complete information is not only a battle that our civilization must face, but one that we must win if we hope to build a more just and equitable world.
+
+According to Smiley, the acquisition of perfect and complete information is crucial because it would provide individuals with the knowledge and understanding necessary to make truly free and autonomous decisions. Without perfect and complete information, our decisions are limited by our subjective perspectives and biases, and our sense of free will is illusory. Smiley argues that true free will can only exist when we have access to all the information necessary to make informed choices, unencumbered by outside influences or limitations.
+
+Smiley believes that the key to unlocking our “deterministic free will” lies in our ability to gather, process, and analyze vast amounts of data and information. With the advent of new technologies like artificial intelligence and machine learning, we are better equipped than ever before to collect and analyze data on a scale never before imagined.
+
+The pursuit of perfect and complete information is a noble and worthwhile goal, as it has the potential to revolutionize our understanding of ourselves and the world around us, and unlock new frontiers of human potential.
+
+Distributive Sequencing Network(s)
+
+Distributed sequencing networks have the potential to enable the most objective and pure form of “perfect and complete information” through their ability to collect, process, and distribute vast amounts of data in a decentralized and transparent manner. This is accomplished through the use of advanced algorithms and machine learning techniques that can analyze and interpret data in real-time, allowing for faster and more accurate decision-making.
+
+The use of distributed sequencing networks also enables the creation of a more level playing field for accessing information, as it is not controlled by any central authority or entity. This promotes a more open and fair exchange of information, reducing the potential for bias or manipulation.
+
+Furthermore, the use of smart contracts in these networks can provide a higher degree of trust and security in the exchange of information, as the terms of the contracts are immutable and enforced by the network itself. This eliminates the need for intermediaries or third-party entities, reducing the potential for corruption or manipulation.
+
+In the context of distributed sequencing networks, the combination of sequences of actions and events with a semi-anonymous zero-knowledge identity system can enable the most objective and pure form of “perfect and complete information” without sacrificing personal privacy.
+
+Shared Database of Task-Action-Event Sequencing
+
+By leveraging Distributed Sequencing Network(s), all players and users can have access to a shared database that provides a comprehensive record of all past and present actions and events, including their cause-affect-effect relationships. This record can be queried and analyzed in real-time using advanced algorithms and models, enabling players and users to make informed decisions and predictions.
+
+Privacy Reassurance
+
+In order to ensure the privacy of individuals, a semi-anonymous zero-knowledge identity system can be implemented. This system would allow users to access information without revealing their true identity, providing them with a high level of privacy and security. This is achieved by using cryptographic protocols that enable verification of user identity without revealing any sensitive information.
+
+This combination of advanced sequence tracking and zero-knowledge identity technology can provide players and users with the ability to access all of the world’s information at their fingertips while maintaining a high level of privacy and security. It represents a significant advancement in the way we collect, store, and analyze data, enabling more objective and accurate decision-making processes for all.
